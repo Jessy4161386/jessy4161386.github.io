@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monterrey Janitorial HomePage</title>
+<title>Welcome to Monterrey Janitorial</title>
 <link rel="stylesheet" href="monterrey.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,13 @@
 				<img src="Images/logo.png" alt="picture of a blue monterrey logo">
 			</a>
 		</div>
+		<div class="hamburger" id="toggleButton">
+			<div class="hamburgerline"></div>
+			<div class="hamburgerline"></div>
+			<div class="hamburgerline"></div>
+		</div>
 	<nav>
-		<ul>
+		<ul id="navul">
 			<li><a href="index.html">Home</a></li>
 			<li class="submenu">
 				<a href="#">Check out & Request Services</a>
@@ -38,6 +43,13 @@
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
+	<script>
+		const toggleButton = document.getElementById('toggleButton');
+		const navul = document.getElementById('navul');
+
+		toggleButton.addEventListener('click', () => {
+		navul.classList.toggle('active');});
+	</script>
 	</header>
 	<div class="indexbody2">
 		<div class="welcomecontainer">
