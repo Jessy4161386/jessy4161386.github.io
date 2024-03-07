@@ -14,8 +14,13 @@ initial-scale=1">
 				<img src="Images/logo.png" alt="picture of a blue monterrey logo">
 			</a>
 		</div>
+		<div class="hamburger" id="toggleButton">
+			<div class="hamburgerline"></div>
+			<div class="hamburgerline"></div>
+			<div class="hamburgerline"></div>
+		</div>
 	<nav>
-		<ul>
+		<ul id="navul">
 			<li><a href="index.html">Home</a></li>
 			<li class="submenu">
 				<a href="#">Check out & Request Services</a>
@@ -36,6 +41,13 @@ initial-scale=1">
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
+	<script>
+		const toggleButton = document.getElementById('toggleButton');
+		const navul = document.getElementById('navul');
+
+		toggleButton.addEventListener('click', () => {
+		navul.classList.toggle('active');});
+	</script>
 	</header>
 	<main>
 		<div class="developercontainer">
